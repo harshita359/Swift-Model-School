@@ -1,0 +1,54 @@
+@media only screen and (min-width:320px) and (max-width:991px) {
+h1 {
+ font-size:26px!important;
+}
+ h2 {
+ font-size:21px!important;
+}
+ h3 {
+ font-size:19px!important;
+}
+ h4 {
+ font-size:15px!important;
+}
+}
+@media only screen and (min-width:320px) and (max-width:767px) {
+/* header */
+section.contents .content-bar {
+	padding: 20px 0;  
+}
+/* page banner*/
+.banner-bar {
+ padding:50px 0 50px;
+}
+/*contact bar*/
+.contact-bar .no-padding-right{ padding-right:15px!important}
+.contact-bar .no-padding-left{padding-left:15px!important}
+.contact-bar .cont-nav {
+	 
+	padding: 22px; 
+}
+/* rankers */
+.rankers .achievers-pic-container { 
+	height: 288px;  
+}
+/* footer */
+
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+/* header */
+
+/* rankers */
+.rankers .achievers-pic-container { 
+	height: 210px;  
+}
+/* footer */
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+/* header */
+/* rankers */
+.rankers .achievers-pic-container { 
+	height: 205px;  
+}
+/* footer */
+}

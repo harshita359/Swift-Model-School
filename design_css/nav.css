@@ -1,0 +1,190 @@
+#level_1 {
+	list-style: none;
+}
+
+#level_1 li {
+	float: left;
+	display: block;
+	z-index: 999;
+	margin: 0px 23px 0px 0 !important;
+	position: relative;
+}
+
+#level_1 li:last-child {
+	margin-right: 0 !important
+}
+
+#level_1 li a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #333 !important;
+	zoom: 1;
+	padding: 27px 0px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+#level_1>li>a:before {
+	content: '';
+	display: block;
+	border-bottom: 3px solid #ff7a57;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0px;
+	bottom: 0px;
+	width: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-out;
+}
+
+#level_1 li a.has-nav {
+	position: relative;
+}
+
+#level_1 li a.has-nav::after {
+	font-family: 'FontAwesome';
+	color: #ff7a57;
+	margin-left: 12px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	content: "\f0d7    ";
+}
+
+#level_1 li a:hover:before,
+#level_1 li a.active:before {
+	width: 100%
+}
+
+/*********************************************************************************
+level 2 start
+***************/
+#level_1 #level_2 {
+	position: absolute;
+	z-index: 1;
+	top: 78px;
+	display: block;
+	opacity: 0;
+	overflow: hidden;
+	webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	-moz-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	-moz-transform: scale(0);
+	transform: scale(0);
+	transform-origin: top left;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+#level_1 #level_2 li {
+	min-width: 150px;
+	float: none;
+	text-align: left;
+	position: relative;
+	white-space: nowrap;
+	margin: 0px !important;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+#level_1 #level_2 a {
+	border-bottom: 1px #ddd solid;
+	border-top: 0px;
+	background: #fff;
+	padding: 12px 15px;
+}
+
+#level_1 #level_2 li:last-child a {
+	border: none;
+}
+
+#level_1 #level_2 li a:hover {
+	background: #f27c7e;
+	color: #fff !important;
+}
+
+/*********************************************************************************
+level 3 start
+***************/
+#level_1 #level_2 #level_3 {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: 100%;
+	overflow: hidden;
+	webkit-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	-moz-transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	-moz-transform: scale(0);
+	transform: scale(0);
+	transform-origin: top right;
+}
+
+#level_1 #level_2 #level_3 li {}
+
+/**********************************************************/
+#level_1 li:hover #level_2 {
+	opacity: 1;
+	overflow: visible;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+#level_1 #level_2 li:hover #level_3 {
+	opacity: 1;
+	overflow: visible;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+/**********************************************************/
+
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+	#level_1 {
+		display: none;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+	#level_1 {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1169px) {
+	#level_1 li {
+		margin: 0px 19px 0px 0 !important;
+	}
+	#level_1 li a {
+		font-size: 14px;
+		padding: 20px 0px;
+	}
+	#level_1 li a.has-nav::after {
+		margin-left: 8px;
+	}
+
+	#level_1 #level_2 {
+		top: 68px;
+	}
+}
